@@ -1,17 +1,13 @@
 const { v4: uuidv4 } = require("uuid");
 let items = require("../../../Items");
 
-const { log } = console;
-
 const getItems = (req, reply) => {
 	reply.send(items);
 };
 
 const getItem = (req, reply) => {
 	const { id } = req.params;
-	log(id);
-	const item = items.find((item) => item.id === id);
-	log(item);
+	const item = items.find((user) => user.id === id);
 	reply.send(item);
 };
 
@@ -44,7 +40,7 @@ const updateItem = (req, reply) => {
 
 	items = items.map((item) => (item.id === id ? { id, name } : item));
 
-	item = items.find((item) => item.id === id);
+	const item = items.find((user) => user.id === id);
 
 	reply.send(item);
 };
