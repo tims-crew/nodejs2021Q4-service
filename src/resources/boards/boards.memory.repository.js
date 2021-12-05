@@ -1,6 +1,5 @@
 const { validate } = require("uuid")
-const db = require("../../../data.json");
-const Board = require("./boards.model");
+let db = require("../../../data.json");
 const Columns = require("../columns/column.model");
 
 const getBoards = async () => {
@@ -17,7 +16,7 @@ const getBoard = async (id) => {
 }
 
 const createBoard = async ({title, columns}) => {
-    const newColumns = columns.map((column) => new Column(column));
+    const newColumns = columns.map((column) => new Columns(column));
     const newBoard = new Columns({title, columns: newColumns});
     db.boards.push(newBoard);
 
@@ -31,9 +30,9 @@ const updateBoard = async (id, body) => {
     }
     const updatedColumns = body.columns.map(({ id: colId, ...rest }) => {
       if (validate(colId)) {
-        return new Column({ id: colId, ...rest });
+        return new Columns({ id: colId, ...rest });
       }
-      return new Column(rest);
+      return new Columns(rest);
     });
   
     const updatedBoard = {
