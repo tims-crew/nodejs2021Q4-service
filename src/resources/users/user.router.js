@@ -60,7 +60,7 @@ const postItemOpts = {
 			},
 		},
 		response: {
-			201: Item,
+			201: ItemOutPass,
 		},
 	},
 	handler: addItem,
