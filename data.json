@@ -1,0 +1,46 @@
+{
+	"users": [
+		{
+			"id": "a777cbbe-c6e2-4670-a706-e300a6c2997e",
+			"name": "TEST_USER",
+			"login": "test_user",
+			"password": "T35t_P@55w0rd"
+		},
+		{
+			"id": "4aadb5e7-831b-4489-9b90-f1b0cebdb8b6",
+			"name": "TEST_USER",
+			"login": "test_user",
+			"password": "T35t_P@55w0rd"
+		}
+	],
+	"boards": [
+		{
+			"id": "48e07fe1-1adf-4206-a3e4-daa4004db18f",
+			"title": "work",
+			"columns": [
+				{
+					"id": "577ab28b-d8b9-4475-9346-3c11e7a7d40a",
+					"title": "REST API",
+					"order": 0
+				}
+			]
+		},
+		{
+			"id": "2b52109f-882c-4408-9cd4-2a04f1a98525",
+			"title": "Todos",
+			"columns": [
+				{
+					"id": "8b52109f-882c-4408-9cd4-2a04f1a98525",
+					"title": "workout",
+					"order": 1
+				},
+				{
+					"id": "2e5b0f88-bdae-4c53-b3eb-bf51b7cd86c2",
+					"title": "to buy",
+					"order": 2
+				}
+			]
+		}
+	],
+	"tasks": []
+}
