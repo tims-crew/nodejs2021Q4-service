@@ -1,4 +1,3 @@
-const { v4: uuidv4 } = require("uuid");
 let { users: items } = require("../../../data.json");
 const User = require("./user.model");
 
