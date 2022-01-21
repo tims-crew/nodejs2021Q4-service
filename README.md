@@ -2,6 +2,7 @@
 
 ## Prerequisites
 
+- Docker - [enables developers to package applications into containers](https://docker.com/get-started)
 - Git - [Download & Install Git](https://git-scm.com/downloads).
 - Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
 
@@ -20,6 +21,7 @@ npm install
 ## Running application
 
 ```
+docker compose-up
 npm start
 ```
 
